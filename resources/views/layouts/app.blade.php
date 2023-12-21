@@ -18,7 +18,7 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm p-4">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                    Restaurant
@@ -28,9 +28,23 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav me-auto">
 
+                    <!-- Left Side Of Navbar -->
+                    <ul class="navbar-nav m-auto">
+                        <ul class="nav">
+                            <li class="nav-item">
+                              <a class="nav-link " href="#">Food Menu</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Special Offers</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">About Us</a>
+                            </li>
+                          </ul>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -72,9 +86,12 @@
             </div>
         </nav>
 
+
         <main class="py-4">
             @yield('content')
         </main>
+
+
     </div>
 </body>
 </html>
