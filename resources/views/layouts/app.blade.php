@@ -31,9 +31,8 @@
 
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav m-auto">
-                        <ul class="nav">
                             <li class="nav-item">
-                              <a class="nav-link " href="#">Food Menu</a>
+                              <a class="nav-link" href="#">Food Menu</a>
                             </li>
                             <li class="nav-item">
                               <a class="nav-link" href="#">Special Offers</a>
@@ -44,11 +43,19 @@
                             <li class="nav-item">
                               <a class="nav-link" href="#">About Us</a>
                             </li>
-                          </ul>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
+
+                           {{-- Search box --}}
+                           <li class="align-item-end me-5">
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Pizza" aria-label="Search">
+                                <button class="btn" type="submit">Search</button>
+                              </form>
+                        </li>
+
                         <!-- Authentication Links -->
                         @guest
                             @if (Route::has('login'))
