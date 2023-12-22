@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-
+    <link rel="stylesheet" href="/css/main.css">
         {{-- Pizza Slider --}}
 		<div class="container-fluid">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -144,7 +144,7 @@
     </div>
 
   {{-- Spcial Offers --}}
-  <div class="container mb-5">
+  <div class="container mb-5" id="special-offers">
     <h4 class="display-5 text-center p-4">Special Offers</h4>
     <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id tempora esse minus sequi blanditiis at magni cupiditate, consequatur ipsam facilis impedit quasi aliquam necessitatibus ullam architecto nisi voluptas fuga rerum?</p>
 
@@ -156,7 +156,7 @@
             <h5 class="card-title text-center">Pepperoni Pizza</h5>
             <h5 class="text-muted text-center">Price</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <a href="#" class="btn btn-outline-danger">Place Order</a>
           </div>
         </div>
       </div>
@@ -168,7 +168,7 @@
             <h5 class="card-title text-center">Pepperoni Pizza</h5>
             <h5 class="text-muted text-center">Price</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <a href="#" class="btn btn-outline-danger">View Details</a>
           </div>
         </div>
       </div>
@@ -180,7 +180,7 @@
             <h5 class="card-title text-center">Pepperoni Pizza</h5>
             <h5 class="text-muted text-center">Price</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <a href="#" class="btn btn-outline-danger">View Details</a>
           </div>
         </div>
       </div>
@@ -192,7 +192,7 @@
             <h5 class="card-title text-center">Pepperoni Pizza</h5>
              <h5 class="text-muted text-center">Price</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <a href="#" class="btn btn-outline-danger">View Details</a>
           </div>
         </div>
       </div>

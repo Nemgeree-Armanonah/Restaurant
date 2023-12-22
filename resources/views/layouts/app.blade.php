@@ -18,7 +18,7 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm p-4">
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm p-4 sticky-top">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                    Restaurant
@@ -35,7 +35,7 @@
                               <a class="nav-link" href="#">Food Menu</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="#">Special Offers</a>
+                              <a class="nav-link" href="#special-offers">Special Offers</a>
                             </li>
                             <li class="nav-item">
                               <a class="nav-link" href="#">Contact Us</a>
