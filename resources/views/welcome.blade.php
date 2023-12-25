@@ -274,46 +274,4 @@
   </div>
 
 
-    {{-- Footer --}}
-	<div class="container-fluid p-5  bg-black text-light" id="footer">
-		<div class="row mt-5">
-			<!-- Address Section -->
-			<div class="col-md-3 text-center">
-				<h4 class="text-center">Our Adresses:</h4>
-			  <dl>
-				<dt>First Adress</dt>
-				<dd>Am Gorbach 5, 59394 Nordkirchen</dd>
-
-				<dt>Second Adress</dt>
-				<dd>Am Gorbach 5, 59394 Nordkirchen</dd>
-
-				<dt>Third Adress</dt>
-				<dd>Am Gorbach 5, 59394 Nordkirchen</dd>
-
-				<dt>Forth Adress</dt>
-				<dd>Am Gorbach 5, 59394 Nordkirchen</dd>
-			  </dl>
-			</div>
-
-			<!-- Logo and Brand -->
-			<div class="col-md-6 text-center align-items-center footer">
-				<img src="./images/logo.png" alt="Logo at the Footer" class="img-fluid">
-			</div>
-
-			<!-- Social contacts-->
-			<div class="col-md-3 social-contact">
-				<h4 class="text-center">Get in Touch</h4>
-				 <ul class="text-center list-unstyled">
-					<li><i class="bi bi-facebook"></i></li>
-					<li><i class="bi bi-instagram"></i></li>
-					<li><i class="bi bi-youtube"></i></li>
-					<li><i class="bi bi-whatsapp"></i></li>
-				 </ul>
-			</div>
-		</div>
-	</div>
-
-
-
-
 @endsection
