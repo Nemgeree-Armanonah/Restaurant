@@ -274,7 +274,6 @@
   </div>
 
 
-
     {{-- Footer --}}
 	<div class="container-fluid p-5  bg-black text-light" id="footer">
 		<div class="row mt-5">
