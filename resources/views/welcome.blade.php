@@ -45,46 +45,46 @@
                 <h4 class="display-6 text-center">Fequently orderd Pizzas</h4>
 
                 <div class="row m-auto">
-                    <div class="col-md-3">
+                    <div class="col-md-3 animate__animated animate__bounceInRight">
                         <div class="card" style="width: 18rem;">
                             <img src="/images/MeatLover.jpg" class="card-img-top" alt="Neapolitan Pizza">
                             <div class="card-body">
                               <h5 class="card-title">Meat Lover Pizza</h5>
                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                              <a href="#" class="btn btn-outline-danger">Go somewhere</a>
                             </div>
                           </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-3 animate__animated animate__bounceInRight">
                         <div class="card" style="width: 18rem;">
                             <img src="/images/Hawaiian.jpg" class="card-img-top" alt="Hawaiian Pizza">
                             <div class="card-body">
                               <h5 class="card-title">Hawaiian Pizza</h5>
                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                              <a href="#" class="btn btn-outline-danger">Go somewhere</a>
                             </div>
                           </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-3 animate__animated animate__bounceInRight">
                         <div class="card" style="width: 18rem;">
                             <img src="/images/Pepperoni.jpg" class="card-img-top" alt="Pepperoni Pizza">
                             <div class="card-body">
                               <h5 class="card-title">Pepperoni Pizza</h5>
                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                              <a href="#" class="btn btn-outline-danger">Go somewhere</a>
                             </div>
                           </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-3 animate__animated animate__bounceInRight">
                         <div class="card" style="width: 18rem;">
                             <img src="/images/BBQ-chicken.jpg" class="card-img-top" alt="Margarita">
                             <div class="card-body">
                               <h5 class="card-title">Margarita Pizza</h5>
                               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                              <a href="#" class="btn btn-outline-danger">Go somewhere</a>
                             </div>
                           </div>
                     </div>
@@ -94,7 +94,7 @@
     <div class="container-fluid bg-light-subtle" id="openningHours">
         <h5 class="display-5 text-center">Openning Hours</h5>
         <p class="lead text-center">We are here to serve you. Make an oder we will take care of it.</p>
-        <div class="row">
+        <div class="row animate__animated animate__bounceleft">
             <div class="col-md-8 m-auto">
             <table class="table table-borderless text-center p-5 mt-3 shadow-sm bg-body-tertiary bordered rounded-3">
                 <thead>
@@ -103,34 +103,34 @@
                     <th>Delivery</th>
                 </thead>
                 <tr>
-                    <td>Monday</td>
-                    <td>11:00 - 22:00</td>
-                    <td>11:30 - 22:30</td>
+                    <td class="animate__animated animate__fadeInUp">Monday</td>
+                    <td class="animate__animated animate__fadeInUp">11:00 - 22:00</td>
+                    <td class="animate__animated animate__fadeInUp">11:30 - 22:30</td>
                 </tr>
                 <tr>
-                    <td>Tuesday</td>
-                    <td>11:00 - 22:00</td>
-                    <td>11:30 - 22:30</td>
+                    <td class="animate__animated animate__fadeInUp">Tuesday</td>
+                    <td class="animate__animated animate__fadeInUp">11:00 - 22:00</td>
+                    <td class="animate__animated animate__fadeInUp">11:30 - 22:30</td>
                 </tr>
                 <tr>
-                    <td>Wednesday</td>
-                    <td>11:00 - 22:00</td>
-                    <td>11:30 - 22:30</td>
+                    <td class="animate__animated animate__fadeInUp">Wednesday</td>
+                    <td class="animate__animated animate__fadeInUp">11:00 - 22:00</td>
+                    <td class="animate__animated animate__fadeInUp">11:30 - 22:30</td>
                 </tr>
                 <tr>
-                    <td>Thursday</td>
-                    <td>11:00 - 22:00</td>
-                    <td>11:30 - 22:30</td>
+                    <td class="animate__animated animate__fadeInUp">Thursday</td>
+                    <td class="animate__animated animate__fadeInUp">11:00 - 22:00</td>
+                    <td class="animate__animated animate__fadeInUp">11:30 - 22:30</td>
                 </tr>
                 <tr>
-                    <td>Friday</td>
-                    <td>11:00 - 22:00</td>
-                    <td>11:30 - 22:30</td>
+                    <td class="animate__animated animate__fadeInUp">Friday</td>
+                    <td class="animate__animated animate__fadeInUp">11:00 - 22:00</td>
+                    <td class="animate__animated animate__fadeInUp">11:30 - 22:30</td>
                 </tr>
                 <tr>
-                    <td>Saturday</td>
-                    <td>11:00 - 22:00</td>
-                    <td>11:30 - 22:30</td>
+                    <td class="animate__animated animate__fadeInUp">Saturday</td>
+                    <td class="animate__animated animate__fadeInUp">11:00 - 22:00</td>
+                    <td class="animate__animated animate__fadeInUp">11:30 - 22:30</td>
                 </tr>
                 <tfoot>
                     <td>Don't hesitate to ask Qeustions! </td>
@@ -197,17 +197,81 @@
         </div>
       </div>
     </div>
-
-
   </div>
+  {{-- Contact Us --}}
+  <div class="container bg-light-subtle p-5" id="contact-us">
+        <h4 class="display-6 text-center ">Contact Us</h4>
+            <div class="row">
+                <div class="col-md-8">
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="John">
+                        </div>
+
+                        <div class="col-md-4 mb-3">
+                            <label for="last_name" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Hoe">
+                        </div>
+
+                        <div class="col-md-4 mb-3">
+                            <label for="E-Mail" class="form-label">E-Mail</label>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="John.Hoe@gmail.com">
+                        </div>
+
+                        <div class="col-md-4 mb-3">
+                            <label for="phone" class="form-label">Phone</label>
+                            <input type="phone" class="form-control" id="phone" name="phone" placeholder="(176) 222 33433">
+                        </div>
+
+                        <div class="col-md-8 mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea name="message" id="message"  class="form-control"></textarea>
+                        </div>
+
+                        <div class="col-md-4 m-auto">
+                            <input type="submit" class="btn btn-outline-danger" value="send">
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="col-md-4">
+                    <h4 class="text-center">Get in Touch</h4>
+                    <table class="table">
+                        <tr>
+                            <td><span class="bi bi-facebook"></span></td>
+                            <td>Restaurant</td>
+                        </tr>
+
+                        <tr>
+                            <td><span class="bi bi-instagram"></span></td>
+                            <td>Restaurant12</td>
+                        </tr>
+
+                        <tr>
+                            <td><span class="bi bi-whatsapp"></span></td>
+                            <td>(+49) 1632435061</td>
+                        </tr>
+
+                        <tr>
+                            <td><span class="bi bi-facebook"></span></td>
+                            <td>Restaurant</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
 
 
 
 
 
-
-
-
+        </div>
+  </div>
 
 
 
@@ -234,7 +298,7 @@
 
 			<!-- Logo and Brand -->
 			<div class="col-md-6 text-center align-items-center footer">
-				<img src="./images/Afghan.png" alt="Logo at the Footer" class="img-fluid">
+				<img src="./images/logo.png" alt="Logo at the Footer" class="img-fluid">
 			</div>
 
 			<!-- Social contacts-->

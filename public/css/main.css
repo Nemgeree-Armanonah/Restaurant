@@ -4,3 +4,8 @@
 .special-offer:hover {
     transform: scale(1.15);
 }
+
+.social-contact ul li {
+    font-size: 25px;
+    color: white;
+}

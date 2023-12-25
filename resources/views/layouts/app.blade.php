@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -40,7 +41,7 @@
 
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="#">Contact Us</a>
+                              <a class="nav-link" href="#contact-us">Contact Us</a>
                             </li>
                             <li class="nav-item">
                               <a class="nav-link" href="#">About Us</a>
