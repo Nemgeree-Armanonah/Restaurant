@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+{{-- CSS File --}}
+    <link rel="stylesheet" href="/css/main.css">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,7 +25,7 @@
 
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                   Restaurant
+                   <img src="/images/logo.png" alt="Logo" class="img-fluid logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -34,7 +36,7 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav m-auto">
                             <li class="nav-item">
-                              <a class="nav-link" href="{{url('/food-menu')}}">Food Menu</a>
+                              <a class="nav-link" href="{{url('/food')}}">Food Menu</a>
                             </li>
                             <li class="nav-item">
                               <a class="nav-link" href="#special-offers">Special Offers</a>
@@ -44,7 +46,7 @@
                               <a class="nav-link" href="#contact-us">Contact Us</a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="#">About Us</a>
+                              <a class="nav-link" href="#about-us">About Us</a>
                             </li>
                     </ul>
 
@@ -53,10 +55,7 @@
 
                            {{-- Search box --}}
                            <li class="align-item-end me-5">
-                            <form class="d-flex" role="search">
-                                <input class="form-control me-2" type="search" placeholder="Pizza" aria-label="Search">
-                                <button class="btn" type="submit">Search</button>
-                              </form>
+                            <a href="" class="btn btn-outline-danger border-0"><i class="bi bi-telephone-forward-fill">  </i>(+49)1632435061</a>
                         </li>
 
                         <!-- Authentication Links -->
