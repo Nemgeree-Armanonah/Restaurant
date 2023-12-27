@@ -203,7 +203,8 @@
         <h4 class="display-6 text-center ">Contact Us</h4>
             <div class="row">
                 <div class="col-md-8">
-
+                <form action="{{url('/contact')}}" method="POST">
+                    @csrf
                     <div class="row">
                         <div class="col-md-4">
                             <label for="name" class="form-label">Name</label>
@@ -236,7 +237,7 @@
 
                     </div>
 
-
+                </form>
                 </div>
 
                 <div class="col-md-4">

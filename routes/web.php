@@ -22,6 +22,12 @@ Route::get('/food',function(){
     return view('food');
 });
 
+Route::post('/contact',function(){
+    return redirect('/') ->with('message', 'Thanks for your Feedback');
+});
+
+
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
