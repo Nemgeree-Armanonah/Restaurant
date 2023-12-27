@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MessageController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
@@ -22,18 +23,8 @@ Route::get('/food',function(){
     return view('food');
 });
 
-Route::post('/contact',function(){
-    $first_name = request('first_name');
-    $last_name = request('last_name');
-    $email = request('email');
-    $phone = request('phone');
-    $message = request('message');
-
-    dump($first_name);
-
-
-    // return redirect('/') ->with('message', 'Thanks for your Feedback');
-});
+// MessageController routes
+Route::post('/contact',[MessageController::class, 'store']);
 
 
 
