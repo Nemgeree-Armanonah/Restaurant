@@ -23,7 +23,16 @@ Route::get('/food',function(){
 });
 
 Route::post('/contact',function(){
-    return redirect('/') ->with('message', 'Thanks for your Feedback');
+    $first_name = request('first_name');
+    $last_name = request('last_name');
+    $email = request('email');
+    $phone = request('phone');
+    $message = request('message');
+
+    dump($first_name);
+
+
+    // return redirect('/') ->with('message', 'Thanks for your Feedback');
 });
 
 

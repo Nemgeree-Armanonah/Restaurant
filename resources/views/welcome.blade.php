@@ -207,8 +207,8 @@
                     @csrf
                     <div class="row">
                         <div class="col-md-4">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" class="form-control" id="name" name="name" placeholder="John">
+                            <label for="first_name" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="first_name" name="first_name" placeholder="John">
                         </div>
 
                         <div class="col-md-4 mb-3">
