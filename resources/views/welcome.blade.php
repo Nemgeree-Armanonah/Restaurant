@@ -220,26 +220,50 @@
                         <div class="col-md-4">
                             <label for="first_name" class="form-label">First Name</label>
                             <input type="text" class="form-control" id="first_name" name="first_name" placeholder="John">
+
+                            @error('first_name')
+                                <span class="fs-6 text-danger">{{$message}}</span>
+                            @enderror
+
                         </div>
 
                         <div class="col-md-4 mb-3">
                             <label for="last_name" class="form-label">Last Name</label>
                             <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Hoe">
+
+                            @error('last_name')
+                                <span class="fs-6 text-danger">{{$message}}</span>
+                            @enderror
                         </div>
 
                         <div class="col-md-4 mb-3">
                             <label for="E-Mail" class="form-label">E-Mail</label>
                             <input type="email" class="form-control" id="email" name="email" placeholder="John.Hoe@gmail.com">
+
+                            @error('email')
+                                <span class="fs-6 text-danger">{{$message}}</span>
+                            @enderror
+
                         </div>
 
                         <div class="col-md-4 mb-3">
                             <label for="phone" class="form-label">Phone</label>
                             <input type="phone" class="form-control" id="phone" name="phone" placeholder="(176) 222 33433">
+
+                            @error('phone')
+                                <span class="fs-6 text-danger">{{$message}}</span>
+                            @enderror
+
                         </div>
 
                         <div class="col-md-8 mb-3">
                             <label for="message" class="form-label">Message</label>
                             <textarea name="message" id="message"  class="form-control"></textarea>
+
+                            @error('message')
+                                <span class="fs-6 text-danger">{{$message}}</span>
+                            @enderror
+
                         </div>
 
                         <div class="col-md-4 m-auto">

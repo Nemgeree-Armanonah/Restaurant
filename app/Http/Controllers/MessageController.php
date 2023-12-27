@@ -9,8 +9,17 @@ class MessageController extends Controller
 {
 
     public function store(){
-        $message = new Message;
 
+//      Validation
+        request()-> validate([
+            'first_name' => 'required|string|max:10',
+            'last_name' => 'required|string|max:10',
+            'email' => 'required|email|unique:message',
+            'message' => 'required|string|max:255',
+            'phone' => 'numeric|min:10'
+        ]);
+
+        $message = new Message;
         $message ->first_name = request('first_name');
         $message ->last_name = request('last_name');
         $message ->email = request('email');
