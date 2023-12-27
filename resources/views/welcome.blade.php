@@ -203,13 +203,13 @@
         <h4 class="display-6 text-center ">Contact Us</h4>
             <div class="row">
                 <div class="col-md-8">
-                <form action="{{url('/contact')}}" method="POST">
+                <form action="{{url('/')}}" method="POST">
                     @csrf
 
                     {{-- Success Message --}}
 
                     @if(session()->has('message'))
-                    <div class="alert alert-success alert-dismissible fade show p-1" role="alert">
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
                         <strong>Hi Dear</strong> {{session('message')}}
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>

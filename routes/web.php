@@ -24,7 +24,7 @@ Route::get('/food',function(){
 });
 
 // MessageController routes
-Route::post('/contact',[MessageController::class, 'store']);
+Route::post('/',[MessageController::class, 'store']);
 
 
 
