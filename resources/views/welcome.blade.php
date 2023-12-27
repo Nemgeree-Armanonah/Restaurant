@@ -205,6 +205,17 @@
                 <div class="col-md-8">
                 <form action="{{url('/contact')}}" method="POST">
                     @csrf
+
+                    {{-- Success Message --}}
+
+                    @if(session()->has('message'))
+                    <div class="alert alert-success alert-dismissible fade show p-1" role="alert">
+                        <strong>Hi Dear</strong> {{session('message')}}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                      @endif
+                      {{-- End of Message --}}
+
                     <div class="row">
                         <div class="col-md-4">
                             <label for="first_name" class="form-label">First Name</label>
