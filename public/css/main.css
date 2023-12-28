@@ -35,3 +35,9 @@
 div.nav .nav-link {
     color:rgb(220, 53, 69);
 }
+
+/* Registeration page */
+.card-header {
+    background-color: rgb(99, 23, 30);;
+    color: white;
+}
