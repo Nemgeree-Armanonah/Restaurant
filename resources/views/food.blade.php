@@ -14,12 +14,13 @@
             </div>
         </div>
 
-
         {{-- Food Menu --}}
         <div class="row">
             <div class="col-md-9">
                 {{-- Adding Pizzas as Cards --}}
                 <div class="row">
+
+                    @foreach ($pizzas as $pizza )
 
                     <div class="col-md-3">
                             <div class="card shadow-sm rounded rounded-4">
@@ -27,80 +28,28 @@
                                     <img src="/images/Hawaiian.jpg" class="card-img-top rounded rounded-4" alt="Hawaiian">
                                 </div>
                                 <div class="card-body">
-                                    <h5 class="card-title">Hawaiian Pizza</h5>
+                                    <h5 class="card-title">{{$pizza -> pizza_name}}</h5>
                                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
                                         dignissimos accusantium amet similique velit iste.</p>
+
+                                        {{-- Pizza sizes --}}
+                                        <ul>
+
+                                         @foreach ($pizza ->pizza_size as $size )
+
+                                            <li>{{$size}}</li>
+                                         @endforeach
+
+                                        </ul>
                                 </div>
                                 <div class="mb-2 d-flex justify-content-around">
-                                    <h3 class="lead">13 €</h3>
+                                    <h3 class="lead">${{$pizza -> pizza_price }}</h3>
                                     <button class="btn btn-outline-danger bordered border-0">Order Now</button>
                                 </div>
                             </div>
                        </div>
 
-                       <div class="col-md-3">
-                        <div class="card shadow-sm rounded rounded-4">
-                            <div class="inner">
-                                <img src="/images/BBQ-chicken.jpg" class="card-img-top rounded rounded-4" alt="Hawaiian">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">BBQ-chicken</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-                                    dignissimos accusantium amet similique velit iste.</p>
-                            </div>
-                            <div class="mb-2 d-flex justify-content-around">
-                                <h3 class="lead">13 €</h3>
-                            <button class="btn btn-outline-danger bordered border-0 ">Order Now</button>
-                            </div>
-                        </div>
-                   </div>
-
-                   <div class="col-md-3">
-                    <div class="card shadow shadow-sm rounded rounded-4">
-                        <div class="inner">
-                            <img src="/images/Pepperoni.jpg" class="card-img-top rounded rounded-4" alt="Hawaiian">
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title">Pepperoni Pizza</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-                                dignissimos accusantium amet similique velit iste.</p>
-                        </div>
-                        <div class="mb-2 d-flex justify-content-around">
-                            <h3 class="lead">13 €</h3>
-                        <button class="btn btn-outline-danger bordered border-0">Order Now</button>
-                        </div>
-                    </div>
-               </div>
-
-               <div class="col-md-3">
-                <div class="card shadow-sm rounded rounded-4">
-                    <div class="inner">
-                        <img src="/images/MeatLover.jpg" class="card-img-top rounded rounded-4" alt="Hawaiian">
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Meat Lover</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-                            dignissimos accusantium amet similique velit iste.</p>
-                    </div>
-                    <div class="mb-2 d-flex justify-content-around">
-                        <h3 class="lead">13 €</h3>
-                        <button class="btn btn-outline-danger bordered border-0">Order Now</button>
-                    </div>
-                </div>
-           </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
+                       @endforeach
                 </div>
 
 

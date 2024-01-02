@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\MessageController;
+use App\Http\Controllers\PizzaController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
@@ -19,9 +20,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/food',function(){
-    return view('food');
-});
+// FoodController
+Route::get('/food',[PizzaController::class, 'food']);
 
 // MessageController routes
 Route::post('/',[MessageController::class, 'store']);
