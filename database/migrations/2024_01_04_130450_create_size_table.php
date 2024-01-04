@@ -11,12 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('pizzas', function (Blueprint $table) {
-            $table->id('pizza_id')->autoIncrement();
-            $table->string('pizza_name');
-            $table->text('pizza_description');
-            $table->double('pizza_price');
-            $table->bigInteger('size_id')->references('size_id')->on('size');
+        Schema::create('size', function (Blueprint $table) {
+            $table->bigInteger('size_id')->autoIncrement();
+            $table->string('size_name');
             $table->timestamps();
         });
     }
@@ -26,6 +23,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('pizzas');
+        Schema::dropIfExists('size');
     }
 };
