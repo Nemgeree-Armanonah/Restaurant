@@ -23,24 +23,16 @@
                     @foreach ($pizzas as $pizza )
 
                     <div class="col-md-3">
-                            <div class="card shadow-sm rounded rounded-4">
+                            <div class="card shadow-sm rounded rounded-4 mt-3">
                                 <div class="inner">
                                     <img src="/images/Hawaiian.jpg" class="card-img-top rounded rounded-4" alt="Hawaiian">
                                 </div>
                                 <div class="card-body">
                                     <h5 class="card-title">{{$pizza -> pizza_name}}</h5>
-                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-                                        dignissimos accusantium amet similique velit iste.</p>
+                                    <p class="card-text"> {{$pizza->pizza_description}}</p>
 
                                         {{-- Pizza sizes --}}
-                                        <ul>
-
-                                         @foreach ($pizza ->pizza_size as $size )
-
-                                            <li>{{$size}}</li>
-                                         @endforeach
-
-                                        </ul>
+                                        <span class="text-muted">Size: </span> <b>{{$pizza ->size_name}}</b>
                                 </div>
                                 <div class="mb-2 d-flex justify-content-around">
                                     <h3 class="lead">${{$pizza -> pizza_price }}</h3>

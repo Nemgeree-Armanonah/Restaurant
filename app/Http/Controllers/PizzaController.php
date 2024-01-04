@@ -12,6 +12,13 @@ class PizzaController extends Controller
 
      $pizzas = Pizza::all();
 
+
+
+     $pizzas = DB::table('pizzas')
+            ->join('size', 'pizzas.size_id', '=', 'size.size_id')
+            ->select('pizzas.*', 'size.size_name')
+            ->get();
+
         return view('/food', ['pizzas'=> $pizzas]);
     }
 }
